@@ -1,0 +1,16 @@
+<!-- Phim thumbnail -->
+<div class="movie" onclick="openModal('video1.mp4')">
+  <img src="thumbnail1.jpg" alt="Bộ phim 1">
+  <p>Bộ phim 1</p>
+</div>
+
+<!-- Modal hiển thị video -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <video id="videoPlayer" controls autoplay>
+      <source id="videoSource" src="" type="video/mp4">
+      Trình duyệt của bạn không hỗ trợ video.
+    </video>
+  </div>
+</div>

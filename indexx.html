@@ -1,0 +1,654 @@
+w<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/base.css">
+    <link rel="stylesheet" href="Testing/mainxx.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+</body>
+<header class="header_navbar">
+    <div class="navbar-container">
+        <div class="logo-container">
+            <h1 class="logo-container-film">Phim Hay </h1>
+        </div>
+        <div class="menu-list">
+            <ul class="menu-container">
+                <li class="menu-container-lists">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">Trang Chủ</a>
+                </li>
+                <li class="menu-container-lists menu-dropdown-parent" id="theloai-menu">
+                    <a href="#" style="text-decoration: none; color: inherit;">Thể loại</a>
+                    <ul class="menu-dropdown mega-dropdown" id="theloai-dropdown">
+                        <li><a href="#">Anime</a></li>
+                        <li><a href="#">Bí Ẩn</a></li>
+                        <li><a href="#">Chiến Tranh</a></li>
+                        <li><a href="#">Chiếu Rạp</a></li>
+                        <li><a href="#">Chuyển Thể</a></li>
+                        <li><a href="#">Chính Kịch</a></li>
+                        <li><a href="#">Chính Luận</a></li>
+                        <li><a href="#">Chính Trị</a></li>
+                        <li><a href="#">Chương Trình Truyền Hình</a></li>
+                        <li><a href="#">Cung Đấu</a></li>
+                        <li><a href="#">Cuối Tuần</a></li>
+                        <li><a href="#">Cách Mạng</a></li>
+                        <li><a href="#">Cổ Trang</a></li>
+                        <li><a href="#">Cổ Tích</a></li>
+                        <li><a href="#">Cổ Điển</a></li>
+                        <li><a href="#">DC</a></li>
+                        <li><a href="#">Disney</a></li>
+                        <li><a href="#">Gay Cấn</a></li>
+                        <li><a href="#">Gia Đình</a></li>
+                        <li><a href="#">Giáng Sinh</a></li>
+                        <li><a href="#">Giả Tưởng</a></li>
+                        <li><a href="#">Hoàng Cung</a></li>
+                        <li><a href="#">Hoạt Hình</a></li>
+                        <li><a href="#">Hài Hước</a></li>
+                        <li><a href="#">Hành Động</a></li>
+                        <li><a href="#">Hình Sự</a></li>
+                        <li><a href="#">Học Đường</a></li>
+                        <li><a href="#">Khoa Học</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                <li class="menu-container-lists">
+                    <a href="television.html" style="text-decoration: none; color: inherit;">Truyền Hình</a>
+                </li>
+                <li class="menu-container-lists">
+                    <a href="popular.html" style="text-decoration: none; color: inherit;">Phổ Biến</a>
+                </li>
+                <li class="menu-container-lists">
+                    <a href="trending.html" style="text-decoration: none; color: inherit;">Xu Hướng</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="profile-container">
+            <!-- <img src="asset/img/profile.jpg" alt="" class="profile-picture"> -->
+
+            <a class="profile-link" href="login.html" style="text-decoration: none; color: inherit;">
+                <i class="icon-user  fa-solid fa-circle-user"></i>
+                <div class="profile-text-container">
+                    <span class="profile-text">Thêm Thành Viên</span>
+                    <!-- <i class="fas fa-caret-down"></i> -->
+                </div>
+            </a>
+
+            <div class="toggle">
+                <i class="fas fa-moon toggle-icon"></i>
+                <i class="fas fa-sun toggle-icon"></i>
+                <div class="toggle-ball"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- <div class="sidebar">
+    <a href="#"><i class="left-menu-icon fas fa-search"></i></a>
+    <a href="#"><i class="left-menu-icon fa-solid fa-house"></i></a>
+    <a href="#"><i class="left-menu-icon fa-solid fa-users"></i></a>
+    <a href="#"><i class="left-menu-icon fa-solid fa-bookmark"></i></a>
+    <a href="#"><i class="left-menu-icon fa-solid fa-tv"></i></a>
+    <a href="#"><i class="left-menu-icon fa-solid fa-hourglass-start"></i></a>
+    <a href="#"><i class="left-menu-icon fa-solid fa-shopping-cart"></i></a>
+</div> -->
+
+<div class="container">
+    <div class="content-container">
+        <div class="featured-content"> <!-- Featured content không hiểu chỗ này -->
+            <img class="featured-title" src="asset/img/PeakyBlinder.jpg" alt="">
+
+
+            <p class="featured-desc"> Peaky Blinders là một loạt phim truyền hình tội phạm – chính kịch nổi tiếng
+                của Anh, lấy bối cảnh tại thành phố Birmingham sau Thế chiến thứ nhất. Phim xoay quanh gia đình
+                Shelby, một băng đảng xã hội đen khét tiếng với tham vọng vươn lên từ thế giới ngầm đến chính
+                trường.</p>
+            <button class="featured-button">WATCH</button>
+        </div>
+        <div class="movie-list-container">
+            <h2 class="movie-list-container-text">Phim Mới</h2>
+            <div class="movie-list-container-listwrapper">
+                <div class="movie-list-container-listwrapper-list">
+
+                    <div class="movie-list-container-list">
+
+                        <img src="asset/img/1.jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Her là một bộ phim lãng mạn hài hước xen lẫn chính kịch phát
+                                hành năm 2013 của Mỹ, do Spike Jonze viết kịch bản kiêm đạo diễn và sản xuất.</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img/2.jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Star War</span>
+                            <p class="movie-list-item-desc">Một bộ phim hành động gay cấn về cuộc chạy trốn khỏi kẻ thù.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img/3.jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Storm</span>
+                            <p class="movie-list-item-desc">Được Marieke, một cô gái bí ẩn sống dưới cống ngầm Antwerp
+                                giúp đỡ, Storm bị cuốn vào cuộc chạy đua với thời gian để cứu cha mình khỏi cái chết</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img/4.jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">1977</span>
+                            <p class="movie-list-item-desc">1917 là một bộ phim điện ảnh đề tài chiến tranh sử thi năm
+                                2019 do Sam Mendes đạo diễn kiêm sản xuất và đồng biên kịch</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img/5.jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title"> Marvel Adventures</span>
+                            <p class="movie-list-item-desc">Loạt phim do Marvel Studios sản xuất, Spellman làm biên kịch
+                                chính và được chỉ đạo bởi Kari Skogland.</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img/6.jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img/7.jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Satellite</span>
+                            <p class="movie-list-item-desc">Một bộ phim về hàng không Vũ Trụ và những cuộc phiêu lưu
+                                ngoài không gian.</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img/20.jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img/21.jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img/22.jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img/23.jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img/24.jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img/12.jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <i class="iconbefore  fas fa-chevron-right arrow"></i>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="movie-list-container">
+            <h2 class="movie-list-container-text">Phim Đề Xuất</h2>
+            <div class="movie-list-container-listwrapper">
+                <div class="movie-list-container-listwrapper-list">
+
+
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (2).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Star War</span>
+                            <p class="movie-list-item-desc">Một bộ phim hành động gay cấn về cuộc chạy trốn khỏi kẻ thù.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (3).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Storm</span>
+                            <p class="movie-list-item-desc">Được Marieke, một cô gái bí ẩn sống dưới cống ngầm Antwerp
+                                giúp đỡ, Storm bị cuốn vào cuộc chạy đua với thời gian để cứu cha mình khỏi cái chết</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (4).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">1977</span>
+                            <p class="movie-list-item-desc">1917 là một bộ phim điện ảnh đề tài chiến tranh sử thi năm
+                                2019 do Sam Mendes đạo diễn kiêm sản xuất và đồng biên kịch</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (5).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title"> Marvel Adventures</span>
+                            <p class="movie-list-item-desc">Loạt phim do Marvel Studios sản xuất, Spellman làm biên kịch
+                                chính và được chỉ đạo bởi Kari Skogland.</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (6).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (7).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Satellite</span>
+                            <p class="movie-list-item-desc">Một bộ phim về hàng không Vũ Trụ và những cuộc phiêu lưu
+                                ngoài không gian.</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (8).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (9).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (10).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (11).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (12).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (13).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (14).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (15).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                </div>
+                <i class="iconbefore  fas fa-chevron-right arrow"></i>
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="featured-content-two"> <!-- Featured content không hiểu chỗ này -->
+            <img class="featured-title-two" src="asset/img/natra-icon.jpg" alt="">
+
+
+            <p class="featured-desc"> Peaky Blinders là một loạt phim truyền hình tội phạm – chính kịch nổi tiếng
+                của Anh, lấy bối cảnh tại thành phố Birmingham sau Thế chiến thứ nhất. Phim xoay quanh gia đình
+                Shelby, một băng đảng xã hội đen khét tiếng với tham vọng vươn lên từ thế giới ngầm đến chính
+                trường.</p>
+            <button class="featured-button">WATCH</button>
+        </div>
+
+
+
+
+
+
+
+        <div class="movie-list-container">
+            <h2 class="movie-list-container-text">Phim Top Trend</h2>
+            <div class="movie-list-container-listwrapper">
+                <div class="movie-list-container-listwrapper-list">
+
+                    <div class="movie-list-container-list">
+
+                        <img src="asset/img_movie/rophim (16).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Her là một bộ phim lãng mạn hài hước xen lẫn chính kịch phát
+                                hành năm 2013 của Mỹ, do Spike Jonze viết kịch bản kiêm đạo diễn và sản xuất.</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (17).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Star War</span>
+                            <p class="movie-list-item-desc">Một bộ phim hành động gay cấn về cuộc chạy trốn khỏi kẻ thù.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (18).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Storm</span>
+                            <p class="movie-list-item-desc">Được Marieke, một cô gái bí ẩn sống dưới cống ngầm Antwerp
+                                giúp đỡ, Storm bị cuốn vào cuộc chạy đua với thời gian để cứu cha mình khỏi cái chết</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (19).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">1977</span>
+                            <p class="movie-list-item-desc">1917 là một bộ phim điện ảnh đề tài chiến tranh sử thi năm
+                                2019 do Sam Mendes đạo diễn kiêm sản xuất và đồng biên kịch</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (20).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title"> Marvel Adventures</span>
+                            <p class="movie-list-item-desc">Loạt phim do Marvel Studios sản xuất, Spellman làm biên kịch
+                                chính và được chỉ đạo bởi Kari Skogland.</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (21).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (22).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Satellite</span>
+                            <p class="movie-list-item-desc">Một bộ phim về hàng không Vũ Trụ và những cuộc phiêu lưu
+                                ngoài không gian.</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (37).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (38).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+
+                    <div class="movie-list-container-list">
+                        <img src="asset/img_movie/rophim (39).jpg" alt="" class="movie-list-item-img">
+                        <div class="movie-list-item-info">
+                            <span class="movie-list-item-title">Monkey Jore</span>
+                            <p class="movie-list-item-desc">Một bộ phim hài hước với nhiều tình huống dở khóc dở cười.
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <i class="iconbefore  fas fa-chevron-right arrow"></i>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- Modal  -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Movie Details</h2>
+            <img src="" alt="" class="modal-movie-img">
+            <div class="modal-movie-info">
+                <h3 class="modal-movie-title"></h3>
+                <p class="modal-movie-desc"></p>
+                <button class="modal-movie-button">WATCH</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Phần này là Footer  -->
+    <footer class="footer">
+        <!-- <div class="footer-top">
+        <span class="island-claim">🏵️ Hoàng Sa & Trường Sa là của Việt Nam!</span>
+      </div> -->
+    
+        <div class="footer-main">
+            <div class="footer-logo">
+                <h2>Phim Hay</h2>
+                <p>Phim hay cả rổ</p>
+            </div>
+    
+            <ul class="footer-links">
+                <li><a href="#">Hỏi-Đáp</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+    
+            <ul class="footer-submenu">
+                <li><a href="#">Dongphim</a></li>
+                <li><a href="#">Ghienphim</a></li>
+                <li><a href="#">Motphim</a></li>
+                <li><a href="#">Subnhanh</a></li>
+            </ul>
+    
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-gamepad"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>
+                Phim Hay – Phim hay cả rổ – Trang xem phim online chất lượng cao miễn phí
+                Vietsub, thuyết minh, lồng tiếng full HD. Kho phim mới khổng lồ, phim chiếu rạp, phim bộ, phim lẻ từ nhiều
+                quốc gia như Việt Nam, Hàn Quốc, Trung Quốc, Thái Lan, Nhật Bản, Âu Mỹ… đa dạng thể loại.
+                <a href="#">Khám phá nền tảng phim trực tuyến hay nhất 2024 chất lượng 4K!</a>
+            </p>
+            <p>© 2024 Phim Hay</p>
+        </div>
+    </footer>
+     
+
+    <script src="Testing/testing.js"></script>
+    </body>
+
+</html>

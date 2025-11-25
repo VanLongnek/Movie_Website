@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  position: absolute;
+  left: 20px; /* Đưa tiêu đề vào lề trái */
+  top: 20px; /* Đặt tiêu đề cách phía trên một chút */
+  margin: 0;
+  z-index: 10; /* Đảm bảo tiêu đề hiển thị trên cùng */
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 100px; /* Để tạo khoảng cách cho tiêu đề */
+}
+
+.movie-card {
+  width: 250px;  /* Chiều rộng nhỏ hơn */
+  height: 375px; /* Chiều cao nhỏ hơn */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card img {
+  width: 100%; /* Hình ảnh chiếm 100% chiều rộng của thẻ */
+  height: 100%; /* Hình ảnh chiếm 100% chiều cao của thẻ */
+  object-fit: cover; /* Đảm bảo hình ảnh lấp đầy không gian mà không bị biến dạng */
+}
+
+.movie-card p {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 10px 0;
+}

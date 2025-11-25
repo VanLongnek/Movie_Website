@@ -1,0 +1,697 @@
+body { 
+    font-family:"Roboto", sans-serif ;
+}
+.header_navbar { 
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: sticky; /* cái này là sao */
+    z-index: 100;
+    top: 0;
+}
+.navbar-container { 
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: "Sen", sans-serif;
+}
+.logo-container { 
+    flex: 1;  /* cái này là sao */
+
+}
+.logo-container-film{ 
+    font-size: 20px;
+    color: #bf5600;
+}
+.menu-list { 
+    flex: 6; /* cái này là sao */
+    
+}
+.menu-container { 
+    display: flex;
+    list-style: none;
+}
+.menu-container-lists {
+    margin-right: 30px;
+ }
+.menu-container-lists.active { 
+    font-weight: bold;
+
+}
+.profile-container { 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 2 1 0%; /* cái này là sao */
+
+}
+/* .profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+
+} */
+
+
+
+/* .sidebar { 
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+} */
+.left-menu-icon {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.toggle { 
+    width: 40px;
+    height: 20px;
+    background-color:white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.toggle-icon { 
+    color: goldenrod;
+}
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  position: absolute;
+  right: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s ease all;
+}
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+.container {
+  background-color: #151515;
+  min-height: calc(100vh - 50px);
+  color: white;
+}
+/* .content-container {
+  margin-left: 50px;
+} */
+.featured-content {
+  height: 50vh;
+  padding: 50px;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('../img/Background-peaky.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.featured-content-two {
+  height: 50vh;
+  padding: 50px;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('../img/natra.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.featured-title { 
+    width: 200px;
+
+}
+.featured-title-two { 
+    width: 200px;
+    height: 200px;
+
+}
+
+.featured-desc { 
+    width: 400px;
+    color: lightgray;
+    margin: 30px 0;
+}
+.featured-button { 
+    background-color: #4dbf00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+
+.movie-list-container {
+    padding: 0 20px;
+}
+.movie-list-container-listwrapper { 
+    position: relative;
+    height: 400px;
+    overflow: hidden; /* Ẩn phần vượt ra ngoài */
+}
+.movie-list-container-listwrapper-list {
+    display: flex;
+    align-items: center;
+    height: 380px;
+    margin: 0px;
+    transform: translate(0);
+    transition: all 1s ease-in-out;
+
+    position: absolute; /* Added this line */
+    top: 0;             /* Added this line */
+    left: 0; 
+}
+.movie-list-container-list:hover {
+    /* margin: 0 60px; 
+    z-index: 2;
+    transition: margin 0.3s, transform 0.3s; */
+
+
+    transform: scale(1.2); /* Phóng to item lên 1.1 lần */
+    margin: 0 40px; /* Giảm margin một chút để cân đối hơn */
+    z-index: 2;
+    transition: all 0.3s ease-in-out; /* Transition cho tất cả thuộc tính */
+}
+.movie-list-container-list{
+    
+    position: relative;
+    /* overflow: hidden; */
+    cursor: pointer;
+    width: 300px;
+    height: 250px;
+    margin: 0 12px;
+
+}
+
+
+
+
+/* KHI DI CHUỘT VÀO ITEM PHIM, LÀM HIỆN LỚP VỎ BỌC */
+.movie-list-container-list:hover .movie-list-item-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.movie-list-item-img { 
+    transition:all  1s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.movie-list-item-title {
+    /* top: 20px; */
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.movie-list-item-desc {
+    bottom: 60px;
+    font-size: 14px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.movie-list-item-button {
+    bottom: 20px;
+    background: #4dbf00;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.movie-list-item-info { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Lớp phủ mờ */
+    border-radius: 20px; /* Bo góc giống với ảnh */
+    
+    /* Dùng flexbox để căn chỉnh nội dung bên trong */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Hiệu ứng ẩn/hiện */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+
+
+/* Dùng quy tắc này, nó đã đúng rồi */
+.movie-list-container-list:hover .movie-list-item-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Các thành phần con không cần tự ẩn mình nữa */
+.movie-list-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.movie-list-item-desc {
+    font-size: 14px;
+    color: white;
+    padding: 0 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.movie-list-item-button {
+    background: #4dbf00;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+
+.iconbefore { /* Chọn đúng icon này */
+  
+  font-size: 90px;
+  position: absolute; /* Thuộc tính này có nghĩa là gì  */
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 3; /* Thêm z-index để đảm bảo nó luôn nằm trên các phần tử khác */
+
+}
+
+
+.container.active {
+    background-color: white;
+}
+
+.movie-list-container-text.active, .profile-text.active, .menu-container-lists.active {
+    color: black;
+    
+}
+
+.sidebar.active, .navbar-container.active {
+    background-color: white;
+    color: black;
+}
+
+.sidebar.active .left-menu-icon {
+    color: black;
+}
+
+.toggle.active {
+    background-color: black;
+}
+
+.toggle-ball.active {
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+.logo-container-film.active {
+    color: black;
+}
+
+/* Modal  */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    --growth-from: 0.7;
+    --growth-to: 1;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    animation: growth linear 0.1s;
+}
+
+/* Auth Form */
+.auth-form {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.auth-form__container {
+    padding: 0 32px;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 10px;
+}
+
+.auth-form__heading {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.auth-form__switch-btn {
+    font-size: 1.6rem;
+    color: #bf5600;
+    cursor: pointer;
+}
+
+.auth-form__form {
+    margin-top: 16px;
+}
+
+.auth-form__group {
+    margin-bottom: 16px;
+}
+
+.auth-form__input {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    outline: none;
+}
+
+.auth-form__input:focus {
+    border-color: #888;
+}
+
+.auth-form__aside {
+    margin-top: 18px;
+}
+
+.auth-form__policy-text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.auth-form__text-link {
+    color: #bf5600;
+    text-decoration: none;
+}
+
+.auth-form__controls {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__controls-back {
+    margin-right: 8px;
+}
+
+.btn {
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: #333;
+    background-color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--primary {
+    color: #fff;
+    background-color: #bf5600;
+}
+
+
+
+
+
+
+/* Phần này là profile container  */
+.profile-text-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    z-index: 1;
+}
+
+.profile-dropdown.active {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+.dropdown-item:hover {
+    background-color: #333;
+}
+
+
+/* Đây là phần css login  */
+
+.icon-user {
+    font-size: 30px; /* Tăng kích thước icon */
+    color: #fff;     /* Màu trắng, có thể thay đổi */
+    margin-right: 12px; /* Cách một chút với phần bên phải */
+    vertical-align: middle; /* Căn giữa theo chiều dọc nếu cần */
+}
+
+.profile-text { 
+    font-size: 14px;
+    color: #fff;
+}
+.profile-link{ 
+    /* text-decoration: none; */
+    /* color: inherit; */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Khoảng cách giữa icon và text */
+    margin-right: 18px; /* Khoảng cách với thành phần toggle */
+}
+
+
+/* List thể lại phim  */
+
+.menu-dropdown-parent {
+    position: relative;
+}
+
+.mega-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(20, 20, 20, 0.97);
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    padding: 24px 32px 24px 32px;
+    min-width: 700px;
+    max-width: 900px;
+    z-index: 100;
+    /* Grid layout cho nhiều cột */
+    /* display: grid; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 32px;
+}
+
+/* .menu-dropdown-parent:hover .mega-dropdown {
+    display: grid;
+} */
+
+.mega-dropdown li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.mega-dropdown li a {
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    padding: 4px 0;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+}
+
+.mega-dropdown li a:hover {
+    background: #333;
+    color: #ffd700;
+}
+
+.mega-dropdown.active {
+    display: grid;
+}
+
+
+
+
+
+
+.footer {
+  background: #0f1016;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-top .island-claim {
+  background: #e02424;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo img {
+  width: 60px;
+}
+.footer-logo h2 {
+  color: #fff;
+  margin: 5px 0;
+}
+.footer-logo p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-links,
+.footer-submenu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.footer-links li a,
+.footer-submenu li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+}
+.footer-links li a:hover,
+.footer-submenu li a:hover {
+  color: #fff;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+.footer-social a {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.footer-social a:hover {
+  background: #e02424;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+  line-height: 1.6;
+}
+.footer-bottom a {
+  color: #5aa9ff;
+  text-decoration: none;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
